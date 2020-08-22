@@ -21,7 +21,9 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.5",
     "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.3",
     "stylelint": "^13.6.1",
     "vue-template-compiler": "^2.6.11"
   },
@@ -43,5 +45,11 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  }
 }
