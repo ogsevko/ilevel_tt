@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    Dropdown
+    <Logo />
   </div>
 </template>
 
 <script>
+import Logo from './components/Logo';
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Logo
+  }
 }
 </script>
 
@@ -16,6 +21,7 @@ export default {
 
 #app {
   font-family: Ubuntu, Helvetica, Arial, sans-serif;
-  color: #2c3e50;
+  text-align: center;
+  color: rgb(33, 37, 41);
 }
 </style>
